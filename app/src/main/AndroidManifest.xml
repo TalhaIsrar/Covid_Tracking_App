@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buzzercode.covidmanagmentcenternust">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CovidManagmentCenterNust">
+        <activity android:name=".ExitActivity"/>
+        <activity android:name=".Registercovid2Activity" android:theme="@style/DemoTheme"/>
+        <activity android:name=".RegistercovidActivity" />
+        <activity android:name=".RegisterfacultyActivity" />
+        <activity android:name=".RegisterstudentActivity" />
+        <activity android:name=".AdminmainActivity" />
+        <activity android:name=".FacultymainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ExtraloginActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

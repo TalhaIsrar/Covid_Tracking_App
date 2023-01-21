@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_white"
+            android:title="Home" />
+        <item
+            android:id="@+id/register_covid"
+            android:icon="@drawable/ic_add"
+            android:title="Covid Form" />
+        <item
+            android:id="@+id/covid_profile"
+            android:icon="@drawable/ic_covid"
+            android:title="Covid Profile" />
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/ic_message"
+            android:title="Message" />
+
+    </group>
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_profile_white"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/edit_rofile"
+                    android:icon="@drawable/ic_edit_profile"
+                    android:title="Edit Profie" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_logout_white"
+                    android:title="Log Out" />
+            </group>
+        </menu>
+    </item>
+</menu>

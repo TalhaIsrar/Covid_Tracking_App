@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"
+        android:id="@+id/nav_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/nav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_image"
+        android:layout_centerHorizontal="true"
+        android:text="Talha Israr"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

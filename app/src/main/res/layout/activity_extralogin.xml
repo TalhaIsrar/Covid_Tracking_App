@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExtraloginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:elevation="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Sign In as faculty"
+                android:elevation="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.scwang.wave.MultiWaveHeader
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mwhCloseColor="@color/waveup"
+                app:mwhGradientAngle="-90"
+                app:mwhStartColor="@color/wavedown"
+                app:mwhVelocity="3"
+                app:mwhWaveHeight="30dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/username_extra"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="10dp"
+                android:hint="User id"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/password_extra"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/username_extra"
+                android:backgroundTint="#787878"
+                android:cursorVisible="false"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginBottom="15dp"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/buttons_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_blue1">
+
+                        <Button
+                            android:id="@+id/login_extra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#00FFFFFF"
+                            android:gravity="center"
+                            android:text="Login"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="8dp"
+                        android:text="or"
+                        android:textAlignment="center"
+                        android:textColor="#787878" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_grey">
+
+                        <Button
+                            android:id="@+id/register_faculty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#00FFFFFF"
+                            android:gravity="center"
+                            android:text="Register"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_extra"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

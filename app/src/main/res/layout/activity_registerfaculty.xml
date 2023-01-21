@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterfacultyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:elevation="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/extra_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/logo" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/extra_add_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_plus" />
+        </RelativeLayout>
+
+
+        <com.scwang.wave.MultiWaveHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:mwhCloseColor="@color/waveup"
+            app:mwhGradientAngle="-90"
+            app:mwhStartColor="@color/wavedown"
+            app:mwhVelocity="2"
+            app:mwhWaveHeight="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/add_name_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_cms_uid_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:hint="User Id"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_father_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_family"
+                android:drawablePadding="10dp"
+                android:hint="Father name"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_password_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_age_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_hourglass"
+                android:drawablePadding="10dp"
+                android:hint="Age"
+                android:inputType="number"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_id_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_personal_card"
+                android:drawablePadding="10dp"
+                android:hint="Office id"
+                android:inputType="number"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_email_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_department_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+                android:drawablePadding="10dp"
+                android:hint="Department"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_phone_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+            <EditText
+                android:id="@+id/add_address_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#787878"
+                android:drawableLeft="@drawable/ic_baseline_home_24"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+                android:textColor="#333333"
+                android:textColorHint="#787878" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_cont1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_blue1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/add_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/adding_faculty"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

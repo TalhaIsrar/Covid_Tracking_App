@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "197570477468",
+    "project_id": "covid-management-system-nust",
+    "storage_bucket": "covid-management-system-nust.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197570477468:android:8d962a06629c54ce149c59",
+        "android_client_info": {
+          "package_name": "com.buzzercode.covidmanagmentcenternust"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197570477468-auprep3d5oiu83np71f7b0tb4rfsmoh1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.buzzercode.covidmanagmentcenternust",
+            "certificate_hash": "1ab901c196fd35612a27eb3bb5c571fff2e30826"
+          }
+        },
+        {
+          "client_id": "197570477468-tkduhfnssvoq89s0p2ouac091d2f05cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDULEh_s5U2hhdOksWsszQ2Tp3gz_3DGtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197570477468-tkduhfnssvoq89s0p2ouac091d2f05cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
